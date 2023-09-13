@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100vw;
+}
+
+button {
+    font-size: 18px;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+:root {
+    --gray-400: #e5e5e5;
+    --gray-500: #c4c4c4;
+    --gray-600: #727272;
+    --gray-700: #828282;
+
+    --blue-400: #1c86a4;
+    --blue-500: #014561;
+
+    --gold: #be9667;
+}

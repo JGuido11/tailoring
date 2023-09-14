@@ -1,0 +1,10 @@
+.header{
+    background-color: blue;
+
+    &__container{
+        list-style: none;
+        flex-direction: row;
+        display: flex;
+    }
+
+}

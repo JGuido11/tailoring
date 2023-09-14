@@ -1,0 +1,17 @@
+.header {
+  background-color: blue;
+}
+.header__container {
+  list-style: none;
+  flex-direction: row;
+  display: flex;
+}
+
+.main {
+  background-color: purple;
+}
+.main__title {
+  font-size: 40px;
+}
+
+/*# sourceMappingURL=styles.css.map */

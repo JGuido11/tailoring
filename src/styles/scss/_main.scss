@@ -1,0 +1,10 @@
+.main{
+    background-color: purple;
+    
+    &__container{
+        display: flex;
+    }
+    &__title{
+        font-size: 40px;
+    }
+}

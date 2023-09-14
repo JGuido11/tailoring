@@ -1,10 +1,34 @@
-import React from 'react'
-import '../../styles/css/styles.css'
+import { Header } from "../Header/Header";
+import { useDrawer } from "../../Context/DrawerContent";
+import { Drawer } from "../Drawer/drawer";
+import { Contact } from "../Contact/contact";
+import { FirstSection } from "../FirstSection/firtsSection";
+import { Footer } from "../Footer/footer";
+import { ReneeSection } from "../ReneeSection/reneeSection";
+import { Products } from "../Products/products";
+import { Promotions } from "../Promotions/promotion";
+import { Depositions } from "../Depositions/deposition";
+import { WhatsButton } from "../WhatsApp/WhatsAppButton";
+import "../../styles/css/styles.css";
 
-export default function Main() {
-  return (
-    <main className='main'>
-        <h1 className='main__title'>MAIN</h1>
-    </main>
-  )
+export function Main() {
+  const { isDrawerOpen } = useDrawer();
+
+  return isDrawerOpen ? (
+    <Drawer />
+  ) : (
+    <>
+      <div className="main__wrapper">
+        <Header />
+        <FirstSection />
+      </div>
+      <ReneeSection />
+      <Promotions />
+      <Products />
+      <Depositions />
+      <Contact />
+      <Footer />
+      <WhatsButton />
+    </>
+  );
 }

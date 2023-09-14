@@ -1,0 +1,18 @@
+.navBar {
+  font: 300 16px Lato, sans-serif;
+  text-transform: uppercase;
+  color: #949494;
+
+  a {
+    margin-left: 2rem;
+    cursor: pointer;
+    transition: 0.5s;
+    &:hover {
+      color: var(--blue-400);
+    }
+  }
+
+  @media (max-width: 1023px) {
+    display: none;
+  }
+}

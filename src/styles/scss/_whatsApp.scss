@@ -1,0 +1,15 @@
+.WAB {
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    background-color: #25d366;
+    height: 60px;
+    width: 60px;
+    bottom: 24px;
+    right: 24px;
+    border-radius: 50%;
+    text-decoration: none;
+  }
+}

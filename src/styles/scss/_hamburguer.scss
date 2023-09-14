@@ -1,0 +1,9 @@
+.hamburguer {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+
+  @media (min-width: 1024px) {
+    display: none;
+  }
+}

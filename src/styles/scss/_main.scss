@@ -1,10 +1,12 @@
-.main{
-    background-color: purple;
-    
-    &__container{
-        display: flex;
+.main {
+  &__wrapper {
+    background-size: cover;
+    background-image: none; //adicionar uma imagem
+    background-repeat: no-repeat;
+
+    @media (min-width: 420px) {
+      background-image: none; //adicionar outra imagem
+      padding-bottom: 50px;
     }
-    &__title{
-        font-size: 40px;
-    }
+  }
 }

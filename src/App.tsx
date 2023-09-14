@@ -1,15 +1,11 @@
-import React from 'react';
-import './App.css';
-import Header from './components/Header/Header';
-import Main from './components/Main/Main';
+import './styles/css/styles.css';
+import { Main } from './Components/Main/Main';
+import { DrawerProvider } from './Context/DrawerContent';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-      <Header/>
-      <Main/>
-    </div>
+    <DrawerProvider>
+      <Main />
+    </DrawerProvider>
   );
 }
-
-export default App;

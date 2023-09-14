@@ -1,0 +1,107 @@
+.Promotions {
+  &__container {
+    height: 780px;
+    background-image: url(../../assets/deposit.png);
+
+    @media (min-width: 1024px) {
+      height: 100%;
+    }
+  }
+
+  &__content {
+    height: 100%;
+    padding: 0 24px;
+    background: linear-gradient(
+      rgba(0, 36, 50, 0.85) 3%,
+      rgba(0, 36, 50, 0.98) 40%,
+      rgba(0, 36, 50, 1)
+    );
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .promotion {
+      h1 {
+        padding-top: 60px;
+        font: 400 53px Cormorant, sans-serif;
+        line-height: 64.18px;
+        color: var(--gold);
+        text-transform: uppercase;
+      }
+
+      > span {
+        display: inline-block;
+        margin: 26px 0 19px;
+        font: 400 28px Cormorant, sans-serif;
+        font-style: italic;
+        color: var(--gold);
+      }
+    }
+
+    @media (max-width: 1023px) {
+      img {
+        display: none;
+      }
+    }
+
+    @media (min-width: 1024px) {
+      padding: 24px 160px;
+
+      .conditions {
+        h1 {
+          padding-top: 0px;
+        }
+      }
+    }
+  }
+
+  &__guaranteesList {
+    margin-top: 19px;
+    list-style: none;
+    color: var(--gray-500);
+
+    li {
+      font: 300 20px Lato, sans-serif;
+      line-height: 24px;
+
+      span {
+        font-weight: 400;
+      }
+
+      & + li {
+        margin-top: 30px;
+      }
+
+      &::before {
+        content: "- ";
+      }
+    }
+
+    @media (min-width: 1024px) {
+      margin-top: 0;
+    }
+  }
+
+  &__button {
+    margin: 50px 0;
+    width: 100%;
+    height: 55px;
+    background: var(--gold);
+    font-weight: 400;
+    color: #e0e0e0e0;
+    border: 0;
+    border-radius: 2px;
+
+    @media (min-width: 1024px) {
+      width: 330px;
+      margin-bottom: 0;
+
+      transition: 0.5s;
+
+      &:hover {
+        background: var(--gray-700);
+      }
+    }
+  }
+}

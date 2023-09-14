@@ -1,0 +1,51 @@
+.Drawer{
+    &__container {
+        width: 100vw;
+        height: 100vh;
+        background: #013145;
+        position: relative;
+        text-align: center;
+      
+        .closeButton {
+          position: absolute;
+          top: 24px;
+          right: 24px;
+        }
+      
+        .links {
+          padding-top: 54px;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 43px;
+      
+          a {
+            text-decoration: none;
+            text-transform: uppercase;
+            color: var(--gold);
+            font: 300 26px Lato, sans-serif;
+          }
+        }
+        .ContactContainer{
+            .contact {
+                margin-top: 117px;
+                font: 300 18px Lato, sans-serif;
+            
+                &:last-child {
+                  margin-top: 8px;
+                }
+            
+                .title {
+                  text-transform: uppercase;
+                  color: var(--blue-400);
+                }
+            
+                .value {
+                  margin-top: 8px;
+                  color: var(--gray-700);
+                }
+              }
+        }
+    }
+}

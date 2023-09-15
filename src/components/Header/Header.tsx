@@ -2,13 +2,13 @@ import { useEffect, useState } from 'react'
 import { HamburguerMenu } from './hamburguerMenu';
 import { NavBar } from './navbar';
 import '../../styles/css/styles.css';
-import logoGold from "../../Assets/Logos/Logo_gold.png";
+import IconGold from "../../Assets/Icons/Icon_gold.png"
 
 export function Header() {
   const [isFixed, setIsFixed] = useState(false);
 
   useEffect(() => {
-    window.addEventListener("scroll", addFixedPosition);
+    window.addEventListener("scroll", addFixedPositon);
     return () => {
       window.removeEventListener("scroll", addFixedPositon);
     };
@@ -29,8 +29,8 @@ export function Header() {
         <HamburguerMenu />
 
         <img
-          className={isFixed ? "header__content__dark" : ""}
-          src={isFixed ? logoGold : logoGold}
+          className={isFixed ? "header__container" : "dark"}
+          src={isFixed ? IconGold : IconGold}
           alt="Renee Trajar logo"
         />
 
@@ -38,8 +38,5 @@ export function Header() {
       </div>
     </header>
   );
-}
-function addFixedPosition(this: Window, ev: Event) {
-  throw new Error('Function not implemented.');
 }
 

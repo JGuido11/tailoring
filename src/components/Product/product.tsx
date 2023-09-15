@@ -26,7 +26,7 @@ export function Product({ imgUrl, title, description, pros }: productProp){
                 </ul>
                 <div className="Product__productInfo">
                     <button className="button">
-                        <a href="https://api.whatsapp.com/send?phone=5511945501193&text=Olá%2C gostaria de fazer um orçamento" target="_blank">
+                        <a href="https://www.instagram.com/gkchogah/?igshid=MzRlODBiNWFlZA%3D%3D" target="_blank">
                             Quero Orçamento
                         </a>
                     </button>

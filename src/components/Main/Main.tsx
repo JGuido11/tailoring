@@ -8,7 +8,7 @@ import { ReneeSection } from "../ReneeSection/reneeSection";
 import { Products } from "../Products/products";
 import { Promotions } from "../Promotions/promotion";
 import { Depositions } from "../Depositions/deposition";
-import { WhatsButton } from "../WhatsApp/WhatsAppButton";
+import { Instagram } from "../Social Media/instagram";
 import "../../styles/css/styles.css";
 
 export function Main() {
@@ -28,7 +28,7 @@ export function Main() {
       <Depositions />
       <Contact />
       <Footer />
-      <WhatsButton />
+      <Instagram />
     </>
   );
 }

@@ -15,7 +15,7 @@ export function Promotions() {
           </ul>
           <button className="Promotions__button">
             <a
-              href="https://api.whatsapp.com/send?phone=5511945501193&text=Olá%2C gostaria de fazer um orçamento."
+              href="https://www.instagram.com/gkchogah/?igshid=MzRlODBiNWFlZA%3D%3D"
               target="_blank"
             >
               garantee this very special condition!!

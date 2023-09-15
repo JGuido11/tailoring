@@ -1,4 +1,5 @@
 import "../../styles/css/styles.css";
+import LogoDark from "../../Assets/Logos/Logo_black.png";
 
 export function Footer() {
   function handleScrollTop() {
@@ -12,7 +13,7 @@ export function Footer() {
       <div className="content">
         <div className="data">
           <div className="reneeData">
-            {/* <img src={logoDarkImg} alt="Logo Renee Trajar" /> adicionar a logo do cliente*/}
+            <img src={LogoDark} alt="Logo" /> 
           </div>
           <p className="copyRight">
             Copyright: 2023 © GK & Chogah <br />

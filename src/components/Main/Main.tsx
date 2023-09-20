@@ -1,14 +1,15 @@
 import { Header } from "../Header/Header";
 import { useDrawer } from "../../Context/DrawerContent";
 import { Drawer } from "../Drawer/drawer";
-import { Contact } from "../Contact/contact";
+// import { Contact } from "../Contact/contact";
 import { FirstSection } from "../FirstSection/firtsSection";
-import { Footer } from "../Footer/footer";
-import { ReneeSection } from "../ReneeSection/reneeSection";
-import { Products } from "../Products/products";
-import { Promotions } from "../Promotions/promotion";
-import { Depositions } from "../Depositions/deposition";
-import { Instagram } from "../Social Media/instagram";
+// import { Footer } from "../Footer/footer";
+// import { ReneeSection } from "../ReneeSection/reneeSection";
+// import { Products } from "../Products/products";
+// import { Promotions } from "../Promotions/promotion";
+// import { Depositions } from "../Depositions/deposition";
+// import { Instagram } from "../Social Media/instagram";
+import TailoringForm from "../Forms/Tailoring-form";
 import "../../styles/css/styles.css";
 
 export function Main() {
@@ -22,13 +23,7 @@ export function Main() {
         <Header />
         <FirstSection />
       </div>
-      <ReneeSection />
-      <Promotions />
-      <Products />
-      <Depositions />
-      <Contact />
-      <Footer />
-      <Instagram />
+      <TailoringForm />
     </>
   );
 }

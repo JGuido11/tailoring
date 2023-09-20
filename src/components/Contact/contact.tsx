@@ -10,10 +10,8 @@ export function Contact() {
 
     return(
         <div id="contact" className="contact__container">
-
-            //#region Contact with the owner
             <section className="formContainer">
-                <h1>Contact</h1>
+                <h1>Forms</h1>
                 <div className="divider"/>
                 {isformSent ? (
                     <p style={{ marginTop: 32 }}>Menssage Sent Sucessfully</p>

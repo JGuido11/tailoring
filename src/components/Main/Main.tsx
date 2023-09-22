@@ -1,15 +1,9 @@
 import { Header } from "../Header/Header";
 import { useDrawer } from "../../Context/DrawerContent";
 import { Drawer } from "../Drawer/drawer";
-// import { Contact } from "../Contact/contact";
-import { FirstSection } from "../FirstSection/firtsSection";
-// import { Footer } from "../Footer/footer";
-// import { ReneeSection } from "../ReneeSection/reneeSection";
-// import { Products } from "../Products/products";
-// import { Promotions } from "../Promotions/promotion";
-// import { Depositions } from "../Depositions/deposition";
-// import { Instagram } from "../Social Media/instagram";
+// import { FirstSection } from "../FirstSection/firtsSection";
 import TailoringForm from "../Forms/Tailoring-form";
+import TailoringPage from "../TailorinPage/Tailoring";
 import "../../styles/css/styles.css";
 
 export function Main() {
@@ -21,9 +15,10 @@ export function Main() {
     <>
       <div className="main__wrapper">
         <Header />
-        <FirstSection />
+        {/* <FirstSection /> */}
       </div>
       <TailoringForm />
+      <TailoringPage />
     </>
   );
 }

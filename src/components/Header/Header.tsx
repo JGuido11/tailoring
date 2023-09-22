@@ -1,8 +1,8 @@
 import { useEffect, useState } from 'react'
-import { HamburguerMenu } from './hamburguerMenu';
-import { NavBar } from './navbar';
 import '../../styles/css/styles.css';
 import IconGold from "../../Assets/Icons/Icon_gold.png"
+import { HamburguerMenu } from './hamburguerMenu';
+import { NavBar } from './navbar';
 
 export function Header() {
   const [isFixed, setIsFixed] = useState(false);

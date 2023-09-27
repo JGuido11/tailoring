@@ -1,4 +1,3 @@
-import { Header } from "../Header/Header";
 import { useDrawer } from "../../Context/DrawerContent";
 import { Drawer } from "../Drawer/drawer";
 // import { Contact } from "../Contact/contact";
@@ -23,7 +22,6 @@ export function Main() {
         <Header />
         <FirstSection />
       </div>
-      <TailoringForm />
     </>
   );
 }

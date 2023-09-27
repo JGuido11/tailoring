@@ -1,13 +1,14 @@
 import React, { useState } from 'react';
 import '../../styles/css/styles.css';
 
-const TailoringForm: React.FC = () => {
+const FormVest: React.FC = () => {
   const [formData, setFormData] = useState({
-    name: '',
+    Height: '',
+    Weight: '',
     chest: '',
-    waist: '',
-    hips: '',
-    sleeveLength: '',
+    Stomach: '',
+    FrontVestLength: '',
+    BackVestLength: '',
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,19 +27,29 @@ const TailoringForm: React.FC = () => {
       <form onSubmit={handleSubmit}>
       
         <div>
-          <h2>Formulário de Alfaiataria</h2>
-            <label htmlFor="name">Nome:</label>
+            <label htmlFor="Height">Height:</label>
               <input
                 type="text"
-                id="name"
-                name="name"
-                value={formData.name}
+                id="Height"
+                name="Height"
+                value={formData.Height}
                 onChange={handleChange}
               />
         </div>
-
+        <br />
         <div>
-          <label htmlFor="chest">Medida do Peito:</label>
+            <label htmlFor="Weight">Weight:</label>
+              <input
+                type="text"
+                id="Weight"
+                name="Weight"
+                value={formData.Weight}
+                onChange={handleChange}
+              />
+        </div>
+        <br />
+        <div>
+          <label htmlFor="chest">Chest size:</label>
             <input
               type="text"
               id="chest"
@@ -47,45 +58,48 @@ const TailoringForm: React.FC = () => {
               onChange={handleChange}
             />
         </div>
-
+        <br />
         <div>
-          <label htmlFor="waist">Medida da Cintura:</label>
+          <label htmlFor="Stomach">Stomach:</label>
             <input
               type="text"
-              id="waist"
-              name="waist"
-              value={formData.waist}
+              id="Stomach"
+              name="Stomach"
+              value={formData.Stomach}
               onChange={handleChange}
             />
         </div>
-
+        <br />
         <div>
-          <label htmlFor="hips">Medida dos Quadris:</label>
+          <label htmlFor="FrontVestLength">Front Vest Length:</label>
             <input
               type="text"
-              id="hips"
-              name="hips"
-              value={formData.hips}
+              id="FrontVestLength"
+              name="FrontVestLength"
+              value={formData.FrontVestLength}
               onChange={handleChange}
             />
         </div>
-          
+        <br />
         <div>
-          <label htmlFor="sleeveLength">Comprimento da Manga:</label>
+          <label htmlFor="BackVestLength">Back Vest Length:</label>
             <input
               type="text"
-              id="sleeveLength"
-              name="sleeveLength"
-              value={formData.sleeveLength}
+              id="BackVestLength"
+              name="BackVestLength"
+              value={formData.BackVestLength}
               onChange={handleChange}
             />
         </div>
-
-
+        <br />
+        <div>
+            <textarea name="name" id="name" placeholder='Other Special Requirements' rows={3} cols={35}/>
+        </div>
+        <br />
         <button type="submit">Enviar</button>
       </form>
     </div>
   );
 };
 
-export default TailoringForm;
+export default FormVest;

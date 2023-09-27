@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import '../../styles/css/styles.css';
 
-const TailoringForm: React.FC = () => {
+const FormWoman: React.FC = () => {
   const [formData, setFormData] = useState({
     name: '',
     chest: '',
@@ -88,4 +88,4 @@ const TailoringForm: React.FC = () => {
   );
 };
 
-export default TailoringForm;
+export default FormWoman;

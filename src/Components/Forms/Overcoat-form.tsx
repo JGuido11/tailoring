@@ -27,22 +27,22 @@ const FormOvercoat: React.FC = () => {
   };
 
   return (
-    <div className='"Tailoring-form"'>
+    <div className="Overcoat-container">
       <form onSubmit={handleSubmit}>
-      
-        <div>
+        <div className="Overcoat-container__row__col-3">
+          <div className="Overcoat-field">
             <label htmlFor="neck">Neck:</label>
-              <input
-                type="text"
-                id="neck"
-                name="neck"
-                value={formData.neck}
-                onChange={handleChange}
-              />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="overcoatLength">Overcoat Length:</label>
+            <input
+              type="text"
+              id="neck"
+              name="neck"
+              value={formData.neck}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="Overcoat-field">
+            <label htmlFor="overcoatLength">Overcoat Length:</label>
             <input
               type="text"
               id="overcoatLength"
@@ -50,10 +50,10 @@ const FormOvercoat: React.FC = () => {
               value={formData.overcoatLength}
               onChange={handleChange}
             />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="shoulder">Shoulder:</label>
+          </div>
+
+          <div className="Overcoat-field">
+            <label htmlFor="shoulder">Shoulder:</label>
             <input
               type="text"
               id="shoulder"
@@ -61,10 +61,12 @@ const FormOvercoat: React.FC = () => {
               value={formData.shoulder}
               onChange={handleChange}
             />
+          </div>
         </div>
-        <br />
-        <div>
-          <label htmlFor="chest"> Chest: </label>
+
+        <div className="Overcoat-container__row__col-3">
+          <div className="Overcoat-field">
+            <label htmlFor="chest">Chest:</label>
             <input
               type="text"
               id="chest"
@@ -72,10 +74,10 @@ const FormOvercoat: React.FC = () => {
               value={formData.chest}
               onChange={handleChange}
             />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="stomach"> Stomach: </label>
+          </div>
+
+          <div className="Overcoat-field">
+            <label htmlFor="stomach">Stomach:</label>
             <input
               type="text"
               id="stomach"
@@ -83,10 +85,10 @@ const FormOvercoat: React.FC = () => {
               value={formData.stomach}
               onChange={handleChange}
             />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="sleeveLength"> Slevee Length: </label>
+          </div>
+
+          <div className="Overcoat-field">
+            <label htmlFor="sleeveLength">Sleeve Length:</label>
             <input
               type="text"
               id="sleeveLength"
@@ -94,10 +96,12 @@ const FormOvercoat: React.FC = () => {
               value={formData.sleeveLength}
               onChange={handleChange}
             />
+          </div>
         </div>
-        <br />
-        <div>
-          <label htmlFor="biceps"> Biceps: </label>
+
+        <div className="Overcoat-container__row__col-3">
+          <div className="Overcoat-field">
+            <label htmlFor="biceps">Biceps:</label>
             <input
               type="text"
               id="biceps"
@@ -105,10 +109,10 @@ const FormOvercoat: React.FC = () => {
               value={formData.biceps}
               onChange={handleChange}
             />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="wrist"> Wrist: </label>
+          </div>
+
+          <div className="Overcoat-field">
+            <label htmlFor="wrist">Wrist:</label>
             <input
               type="text"
               id="wrist"
@@ -116,12 +120,15 @@ const FormOvercoat: React.FC = () => {
               value={formData.wrist}
               onChange={handleChange}
             />
+          </div>
         </div>
+
         <br />
-        <button type="submit">Enviar</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
 };
 
 export default FormOvercoat;
+

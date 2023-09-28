@@ -3,11 +3,12 @@ import SuitForm from "../Forms/Suit-form";
 import FormOvercoat from "../Forms/Overcoat-form";
 import FormVest from "../Forms/Vest-form";
 import FormShirt from "../Forms/Shirt-form";
-import FormWoman from "../Forms/Woman-form";
+import WomanSuit from "../Forms/Woman-form";
+import WomanShirt from "../Forms/WomanShirt-form";
 import "../../styles/css/styles.css";
 
 const TailoringPage: React.FC = () => {
-  const [activeTab, setActiveTab] = useState<"form" | "FormVest" | "FormShirt" | "FormOvercoat" | "FormWoman" >("form");
+  const [activeTab, setActiveTab] = useState<"form" | "FormVest" | "FormShirt" | "FormOvercoat" | "FormWoman" | "WomanShirt" >("form");
 
   return (
     <div className="tailoring-page__container">
@@ -40,16 +41,25 @@ const TailoringPage: React.FC = () => {
           className={activeTab === "FormWoman" ? "active" : ""}
           onClick={() => setActiveTab("FormWoman")}
         >
+          Woman Suit Order
+        </button>
+        <button
+          className={activeTab === "WomanShirt" ? "active" : ""}
+          onClick={() => setActiveTab("WomanShirt")}
+        >
           Woman Shirt Order
         </button>
       </div>
-      <div className="tailoring-page__tab-content">
+
+      <div className="tailoring-page__tab-content__row__col-6">
         {activeTab === "form" && <SuitForm />}
         {activeTab === "FormVest" && <FormVest/>}
         {activeTab === "FormShirt" && <FormShirt/>}
         {activeTab === "FormOvercoat" && <FormOvercoat/>}
-        {activeTab === 'FormWoman' && <FormWoman />}
+        {activeTab === 'FormWoman' && <WomanSuit />}
+        {activeTab === 'WomanShirt' && <WomanShirt />}
       </div>
+
     </div>
   );
 };

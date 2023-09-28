@@ -9,9 +9,10 @@ const FormVest: React.FC = () => {
     Stomach: '',
     FrontVestLength: '',
     BackVestLength: '',
+    SpecialRequirements: ''
   });
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
@@ -23,33 +24,33 @@ const FormVest: React.FC = () => {
   };
 
   return (
-    <div className='"Tailoring-form"'>
+    <div className="Vest-container">
       <form onSubmit={handleSubmit}>
-      
-        <div>
+        <div className="Vest-container__row__col-3">
+          <div className="Vest-field">
             <label htmlFor="Height">Height:</label>
-              <input
-                type="text"
-                id="Height"
-                name="Height"
-                value={formData.Height}
-                onChange={handleChange}
-              />
-        </div>
-        <br />
-        <div>
+            <input
+              type="text"
+              id="Height"
+              name="Height"
+              value={formData.Height}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="Vest-field">
             <label htmlFor="Weight">Weight:</label>
-              <input
-                type="text"
-                id="Weight"
-                name="Weight"
-                value={formData.Weight}
-                onChange={handleChange}
-              />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="chest">Chest size:</label>
+            <input
+              type="text"
+              id="Weight"
+              name="Weight"
+              value={formData.Weight}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="Vest-field">
+            <label htmlFor="chest">Chest size:</label>
             <input
               type="text"
               id="chest"
@@ -57,10 +58,12 @@ const FormVest: React.FC = () => {
               value={formData.chest}
               onChange={handleChange}
             />
+          </div>
         </div>
-        <br />
-        <div>
-          <label htmlFor="Stomach">Stomach:</label>
+
+        <div className="Vest-container__row__col-3">
+          <div className="Vest-field">
+            <label htmlFor="Stomach">Stomach:</label>
             <input
               type="text"
               id="Stomach"
@@ -68,10 +71,10 @@ const FormVest: React.FC = () => {
               value={formData.Stomach}
               onChange={handleChange}
             />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="FrontVestLength">Front Vest Length:</label>
+          </div>
+
+          <div className="Vest-field">
+            <label htmlFor="FrontVestLength">Front Vest Length:</label>
             <input
               type="text"
               id="FrontVestLength"
@@ -79,10 +82,10 @@ const FormVest: React.FC = () => {
               value={formData.FrontVestLength}
               onChange={handleChange}
             />
-        </div>
-        <br />
-        <div>
-          <label htmlFor="BackVestLength">Back Vest Length:</label>
+          </div>
+
+          <div className="Vest-field">
+            <label htmlFor="BackVestLength">Back Vest Length:</label>
             <input
               type="text"
               id="BackVestLength"
@@ -90,16 +93,28 @@ const FormVest: React.FC = () => {
               value={formData.BackVestLength}
               onChange={handleChange}
             />
+          </div>
         </div>
         <br />
         <div>
-            <textarea name="name" id="name" placeholder='Other Special Requirements' rows={3} cols={35}/>
+          <label htmlFor="SpecialRequirements">Other Special Requirements:</label>
+          <textarea
+            name="SpecialRequirements"
+            id="SpecialRequirements"
+            placeholder="Other Special Requirements"
+            rows={3}
+            cols={35}
+            value={formData.SpecialRequirements}
+            onChange={handleChange}
+          />
         </div>
+
         <br />
-        <button type="submit">Enviar</button>
+        <button type="submit">Submit</button>
       </form>
     </div>
   );
 };
 
 export default FormVest;
+

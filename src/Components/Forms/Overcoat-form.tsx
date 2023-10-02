@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import '../../styles/css/styles.css';
 
-const FormOvercoat: React.FC = () => {
+interface OvercoatFormProps {
+  onSave: (data: any) => void;
+}
+
+const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
   const [formData, setFormData] = useState({
     height:'',
     weight:'',

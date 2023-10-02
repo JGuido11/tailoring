@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import '../../styles/css/styles.css';
 
-const WomanShirt: React.FC = () => {
+interface WomanShirtFormProps {
+  onSave: (data: any) => void;
+}
+
+const WomanShirt: React.FC<WomanShirtFormProps> = ({ onSave }) => {
   const [formData, setFormData] = useState({
     neck: "",
     shoulder: "",

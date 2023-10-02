@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "../../styles/css/styles.css";
 
-const SuitForm: React.FC = () => {
+interface SuitFormProps {
+  onSave: (data: any) => void;
+}
+
+const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
   const [formData, setFormData] = useState({
     neck: "",
     frontJacketLength: "",

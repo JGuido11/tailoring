@@ -1,7 +1,11 @@
 import React, { useState } from 'react';
 import '../../styles/css/styles.css';
 
-const FormVest: React.FC = () => {
+interface VestFormProps {
+  onSave: (data: any) => void;
+}
+
+const FormVest: React.FC<VestFormProps> = ({ onSave }) => {
   const [formData, setFormData] = useState({
     Height: '',
     Weight: '',

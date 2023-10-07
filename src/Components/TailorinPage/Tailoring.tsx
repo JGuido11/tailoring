@@ -73,8 +73,8 @@ const TailoringPage: React.FC = () => {
         {activeTab === 'womanSuit' && <WomanSuit onSave={(data) => updateFormData("womanSuitFormData", data)} />}
         {activeTab === 'womanShirt' && <WomanShirt onSave={(data) => updateFormData("womanShirtFormData", data)} />}
       </div>
-
-      <ExportButtonContainer formData={formData} />
+{/* 
+      <ExportButtonContainer formData={formData} /> */}
     </div>
   );
 };

@@ -12,7 +12,7 @@ export function Main() {
   ) : (
     <>
       <div className="main__wrapper">
-        {/* <NavBar /> */}
+        <NavBar />
         <TailoringPage />
       </div>
     </>

@@ -46,7 +46,6 @@
 @media (min-width: 420px) {
   .main__wrapper {
     background-image: none;
-    padding-bottom: 50px;
   }
 }
 
@@ -93,17 +92,23 @@
 }
 
 .navBar {
-  font: 300 16px Lato, sans-serif;
+  display: flex;
+  height: 50px;
+  justify-content: row;
+  background-color: #333;
   text-transform: uppercase;
-  color: #949494;
+  color: #ffcc00;
+  font: 300 16px Lato, sans-serif;
 }
 .navBar a {
+  margin: 15px;
+  padding: 15px;
   margin-left: 2rem;
   cursor: pointer;
-  transition: 0.5s;
+  transition: 0.5s ease-in-out;
 }
 .navBar a:hover {
-  color: var(--blue-400);
+  color: #ff9900;
 }
 @media (max-width: 1023px) {
   .navBar {

@@ -1,23 +1,31 @@
 import React from 'react';
+import "../../styles/css/styles.css";
 
-interface OrderListItemProps {
-  order: any; // Substitua 'any' pelo tipo de dados real do pedido
-  onExport: () => void;
-  onDelete: () => void;
+interface Order {
+  id: number;
+  product: string;
+  quantity: number;
+  // price: number;
 }
 
-const OrderListItem: React.FC<OrderListItemProps> = ({ order, onExport, onDelete }) => {
+interface OrderListItemProps {
+  order: Order;
+  onDelete: () => void; // Passar a Função para exclusão
+  onExport: () => void; // Passar a Função para exportar
+}
+
+const OrderListItem: React.FC<OrderListItemProps> = ({ order, onDelete, onExport }) => {
   return (
-    <div className="order-list-item">
-      {/* Renderizar informações do pedido aqui, por exemplo: */}
-      <p>Product Name: {order.productName}</p>
-      <p>Order Date: {order.orderDate}</p>
-
-      {/* Botão de exportação */}
-      <button onClick={onExport}>Export</button>
-
-      {/* Botão de exclusão */}
-      <button onClick={onDelete}>Delete</button>
+    <div className="orderListItem">
+      <div className="product">
+        <div className="actions">
+          <button onClick={onDelete}>Delete</button>
+          <button onClick={onExport}>Export</button>
+        </div>
+        <div>{order.product}</div>
+      </div>
+      <div className="quantity">{order.quantity}</div>
+      {/* <div className={styles.price}>${(order.quantity * order.price).toFixed(2)}</div> */}
     </div>
   );
 };

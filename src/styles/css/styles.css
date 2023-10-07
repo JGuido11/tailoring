@@ -417,6 +417,39 @@ button:hover {
   margin-top: 20px; /* Ajuste a margem superior conforme necessário */
 }
 
+.order-list {
+  border: 1px solid #ccc;
+  padding: 16px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.order-list__total {
+  font-weight: bold;
+  margin-top: 16px;
+}
+
+.order-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+}
+.order-list-item .product {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.order-list-item .quantity,
+.order-list-item .price {
+  flex: 0 0 50px;
+  text-align: right;
+}
+.order-list-item .actions {
+  display: flex;
+  gap: 8px; /* Espaçamento entre os botões */
+}
+
 * {
   margin: 0;
   padding: 0;

@@ -1,0 +1,25 @@
+.order-list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid #ccc;
+
+  .product {
+    flex: 1;
+    display: flex;
+    align-items: center;
+  }
+
+  .quantity,
+  .price {
+    flex: 0 0 50px;
+    text-align: right;
+  }
+
+  .actions {
+    display: flex;
+    gap: 8px; /* Espaçamento entre os botões */
+  }
+  
+}

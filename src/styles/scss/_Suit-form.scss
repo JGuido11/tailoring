@@ -26,6 +26,71 @@
       outline: none;
     }
   }
+
+  .info-tooltip {
+    background-color: #333; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto clara */
+    border: 1px solid #fff;
+    border-radius: 4px;
+    padding: 10px;
+    max-width: 200px;
+    text-align: left;
+  
+    /* Estilize a imagem do tooltip */
+    .tooltip-image {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+  
+    /* Estilize a descrição do campo no tooltip */
+    .tooltip-description {
+      font-size: 14px;
+    }
+  }
+  
+  /* Defina a aparência do tooltip para diferentes posições */
+  .info-tooltip.place-top,
+  .info-tooltip.place-bottom,
+  .info-tooltip.place-left,
+  .info-tooltip.place-right {
+    &::after {
+      border-color: transparent transparent #333 transparent;
+    }
+  }
+  
+  .info-tooltip.place-top {
+    .info-tooltip-content {
+      &::after {
+        border-color: #333 transparent transparent transparent;
+      }
+    }
+  }
+  
+  .info-tooltip.place-bottom {
+    .info-tooltip-content {
+      &::after {
+        border-color: transparent transparent #333 transparent;
+      }
+    }
+  }
+  
+  .info-tooltip.place-left {
+    .info-tooltip-content {
+      &::after {
+        border-color: transparent transparent transparent #333;
+      }
+    }
+  }
+  
+  .info-tooltip.place-right {
+    .info-tooltip-content {
+      &::after {
+        border-color: transparent #333 transparent transparent;
+      }
+    }
+  }
+
 }
 
 button {

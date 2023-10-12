@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
-import '../../styles/css/styles.css';
+import React, { useState } from "react";
+import { Tooltip } from "react-tooltip";
+import "../../styles/css/styles.css";
 
 interface OvercoatFormProps {
   onSave: (data: any) => void;
@@ -7,16 +8,16 @@ interface OvercoatFormProps {
 
 const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
   const [formData, setFormData] = useState({
-    height:'',
-    weight:'',
-    neck: '',
-    overcoatLength: '',
-    shoulder: '',
-    chest: '',
-    stomach: '',
-    sleeveLength: '',
-    biceps: '',
-    wrist: '',
+    height: "",
+    weight: "",
+    neck: "",
+    overcoatLength: "",
+    shoulder: "",
+    chest: "",
+    stomach: "",
+    sleeveLength: "",
+    biceps: "",
+    wrist: "",
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -24,7 +25,7 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
     setFormData({ ...formData, [name]: value });
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     // Adicionar aqui a lógica para enviar os dados para o servidor ou realizar outras ações.
     console.log(formData);
@@ -36,6 +37,9 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
         <div className="Overcoat-container__row__col-3">
           <div className="Overcoat-field">
             <label htmlFor="neck">Neck:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="neck"
@@ -43,10 +47,25 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.neck}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
 
           <div className="Overcoat-field">
             <label htmlFor="overcoatLength">Overcoat Length:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="overcoatLength"
@@ -54,10 +73,25 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.overcoatLength}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
 
           <div className="Overcoat-field">
             <label htmlFor="shoulder">Shoulder:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="shoulder"
@@ -65,12 +99,27 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.shoulder}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
         </div>
 
         <div className="Overcoat-container__row__col-3">
           <div className="Overcoat-field">
             <label htmlFor="chest">Chest:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="chest"
@@ -78,10 +127,25 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.chest}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
 
           <div className="Overcoat-field">
             <label htmlFor="stomach">Stomach:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="stomach"
@@ -89,10 +153,25 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.stomach}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
 
           <div className="Overcoat-field">
             <label htmlFor="sleeveLength">Sleeve Length:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="sleeveLength"
@@ -100,12 +179,27 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.sleeveLength}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
         </div>
 
         <div className="Overcoat-container__row__col-3">
           <div className="Overcoat-field">
             <label htmlFor="biceps">Biceps:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="biceps"
@@ -113,10 +207,25 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.biceps}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
 
           <div className="Overcoat-field">
             <label htmlFor="wrist">Wrist:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="wrist"
@@ -124,6 +233,18 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
               value={formData.wrist}
               onChange={handleChange}
             />
+            <Tooltip id="name-tooltip" place="right" variant="info">
+              <div className="info-tooltip">
+                <img
+                  src="sua-imagem-aqui.jpg"
+                  alt="Imagem ilustrativa"
+                  className="tooltip-image"
+                />
+                <p className="tooltip-description">
+                  Insira o seu nome completo no campo acima.
+                </p>
+              </div>
+            </Tooltip>
           </div>
         </div>
 
@@ -135,4 +256,3 @@ const FormOvercoat: React.FC<OvercoatFormProps> = ({ onSave }) => {
 };
 
 export default FormOvercoat;
-

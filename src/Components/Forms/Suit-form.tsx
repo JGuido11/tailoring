@@ -42,6 +42,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
         <div className="Suit-container__row__col-3">
           <div className="Suit-field">
             <label htmlFor="neck">Neck:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="neck"
@@ -49,10 +52,14 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
               value={formData.neck}
               onChange={handleChange}
             />
+
           </div>
           <br />
           <div className="Suit-field">
             <label htmlFor="frontJacketLength">Front Jacket Length:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="frontJacketLength"
@@ -64,6 +71,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="shoulder">Shoulder:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="shoulder"
@@ -77,6 +87,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
         <div className="Suit-container__row__col-3">
           <div className="Suit-field">
             <label htmlFor="chest">Chest:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="chest"
@@ -88,6 +101,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="stomach">Stomach:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="stomach"
@@ -99,6 +115,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="sleeveLength">Sleeve Length:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="sleeveLength"
@@ -112,6 +131,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
         <div className="Suit-container__row__col-3">
           <div className="Suit-field">
             <label htmlFor="biceps">Biceps:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="biceps"
@@ -123,6 +145,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="wrist">Wrist:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="wrist"
@@ -134,6 +159,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
 
           <div className="Suit-field">
             <label htmlFor="legLength">Leg Length:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="legLength"
@@ -147,6 +175,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
         <div className="Suit-container__row__col-3">
           <div className="Suit-field">
             <label htmlFor="waist">Waist:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="waist"
@@ -158,6 +189,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="hips">Hips:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="hips"
@@ -169,6 +203,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="crotch">Crotch:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="crotch"
@@ -182,6 +219,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
         <div className="Suit-container__row__col-3">
           <div className="Suit-field">
             <label htmlFor="thigh">Thigh:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="thigh"
@@ -193,6 +233,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="knee">Knee:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="knee"
@@ -204,6 +247,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="cuffFinished">Cuff Finished:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="cuffFinished"
@@ -215,6 +261,9 @@ const SuitForm: React.FC<SuitFormProps> = ({ onSave }) => {
           <br />
           <div className="Suit-field">
             <label htmlFor="calfSize">Calf Size:</label>
+            <i className="info-icon" data-tip="" data-for="name-tooltip">
+              ℹ
+            </i>
             <input
               type="text"
               id="calfSize"

@@ -131,6 +131,7 @@
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  /* Defina a aparência do tooltip para diferentes posições */
 }
 .Suit-container .Suit-container__row__col-3 {
   display: flex;
@@ -152,6 +153,43 @@
   border-radius: 5px;
   outline: none;
 }
+.Suit-container .info-tooltip {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto clara */
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: left;
+  /* Estilize a imagem do tooltip */
+  /* Estilize a descrição do campo no tooltip */
+}
+.Suit-container .info-tooltip .tooltip-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.Suit-container .info-tooltip .tooltip-description {
+  font-size: 14px;
+}
+.Suit-container .info-tooltip.place-top::after,
+.Suit-container .info-tooltip.place-bottom::after,
+.Suit-container .info-tooltip.place-left::after,
+.Suit-container .info-tooltip.place-right::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Suit-container .info-tooltip.place-top .info-tooltip-content::after {
+  border-color: #333 transparent transparent transparent;
+}
+.Suit-container .info-tooltip.place-bottom .info-tooltip-content::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Suit-container .info-tooltip.place-left .info-tooltip-content::after {
+  border-color: transparent transparent transparent #333;
+}
+.Suit-container .info-tooltip.place-right .info-tooltip-content::after {
+  border-color: transparent #333 transparent transparent;
+}
 
 button {
   background-color: #007bff;
@@ -171,6 +209,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  /* Defina a aparência do tooltip para diferentes posições */
 }
 .Shirt-container .Shirt-container__row__col-3 {
   display: flex;
@@ -198,6 +237,43 @@ button:hover {
   border-radius: 5px;
   outline: none;
 }
+.Shirt-container .info-tooltip {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto clara */
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: left;
+  /* Estilize a imagem do tooltip */
+  /* Estilize a descrição do campo no tooltip */
+}
+.Shirt-container .info-tooltip .tooltip-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.Shirt-container .info-tooltip .tooltip-description {
+  font-size: 14px;
+}
+.Shirt-container .info-tooltip.place-top::after,
+.Shirt-container .info-tooltip.place-bottom::after,
+.Shirt-container .info-tooltip.place-left::after,
+.Shirt-container .info-tooltip.place-right::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Shirt-container .info-tooltip.place-top .info-tooltip-content::after {
+  border-color: #333 transparent transparent transparent;
+}
+.Shirt-container .info-tooltip.place-bottom .info-tooltip-content::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Shirt-container .info-tooltip.place-left .info-tooltip-content::after {
+  border-color: transparent transparent transparent #333;
+}
+.Shirt-container .info-tooltip.place-right .info-tooltip-content::after {
+  border-color: transparent #333 transparent transparent;
+}
 
 button {
   background-color: #007bff;
@@ -217,6 +293,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  /* Defina a aparência do tooltip para diferentes posições */
 }
 .Overcoat-container .Overcoat-container__row__col-3 {
   display: flex;
@@ -238,6 +315,43 @@ button:hover {
   border-radius: 5px;
   outline: none;
 }
+.Overcoat-container .info-tooltip {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto clara */
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: left;
+  /* Estilize a imagem do tooltip */
+  /* Estilize a descrição do campo no tooltip */
+}
+.Overcoat-container .info-tooltip .tooltip-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.Overcoat-container .info-tooltip .tooltip-description {
+  font-size: 14px;
+}
+.Overcoat-container .info-tooltip.place-top::after,
+.Overcoat-container .info-tooltip.place-bottom::after,
+.Overcoat-container .info-tooltip.place-left::after,
+.Overcoat-container .info-tooltip.place-right::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Overcoat-container .info-tooltip.place-top .info-tooltip-content::after {
+  border-color: #333 transparent transparent transparent;
+}
+.Overcoat-container .info-tooltip.place-bottom .info-tooltip-content::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Overcoat-container .info-tooltip.place-left .info-tooltip-content::after {
+  border-color: transparent transparent transparent #333;
+}
+.Overcoat-container .info-tooltip.place-right .info-tooltip-content::after {
+  border-color: transparent #333 transparent transparent;
+}
 
 button {
   background-color: #007bff;
@@ -257,6 +371,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  /* Defina a aparência do tooltip para diferentes posições */
 }
 .Vest-container .Vest-container__row__col-3 {
   display: flex;
@@ -272,11 +387,49 @@ button:hover {
 .Vest-container .Vest-field label {
   font-weight: bold;
 }
-.Vest-container .Vest-field input, .Vest-container .Vest-field textarea {
+.Vest-container .Vest-field input,
+.Vest-container .Vest-field textarea {
   padding: 5px;
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
+}
+.Vest-container .info-tooltip {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto clara */
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: left;
+  /* Estilize a imagem do tooltip */
+  /* Estilize a descrição do campo no tooltip */
+}
+.Vest-container .info-tooltip .tooltip-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.Vest-container .info-tooltip .tooltip-description {
+  font-size: 14px;
+}
+.Vest-container .info-tooltip.place-top::after,
+.Vest-container .info-tooltip.place-bottom::after,
+.Vest-container .info-tooltip.place-left::after,
+.Vest-container .info-tooltip.place-right::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Vest-container .info-tooltip.place-top .info-tooltip-content::after {
+  border-color: #333 transparent transparent transparent;
+}
+.Vest-container .info-tooltip.place-bottom .info-tooltip-content::after {
+  border-color: transparent transparent #333 transparent;
+}
+.Vest-container .info-tooltip.place-left .info-tooltip-content::after {
+  border-color: transparent transparent transparent #333;
+}
+.Vest-container .info-tooltip.place-right .info-tooltip-content::after {
+  border-color: transparent #333 transparent transparent;
 }
 
 button {
@@ -297,6 +450,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  /* Defina a aparência do tooltip para diferentes posições */
 }
 .WomanSuit-container .WomanSuit-container__row__col-3 {
   display: flex;
@@ -318,6 +472,43 @@ button:hover {
   border-radius: 5px;
   outline: none;
 }
+.WomanSuit-container .info-tooltip {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto clara */
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: left;
+  /* Estilize a imagem do tooltip */
+  /* Estilize a descrição do campo no tooltip */
+}
+.WomanSuit-container .info-tooltip .tooltip-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.WomanSuit-container .info-tooltip .tooltip-description {
+  font-size: 14px;
+}
+.WomanSuit-container .info-tooltip.place-top::after,
+.WomanSuit-container .info-tooltip.place-bottom::after,
+.WomanSuit-container .info-tooltip.place-left::after,
+.WomanSuit-container .info-tooltip.place-right::after {
+  border-color: transparent transparent #333 transparent;
+}
+.WomanSuit-container .info-tooltip.place-top .info-tooltip-content::after {
+  border-color: #333 transparent transparent transparent;
+}
+.WomanSuit-container .info-tooltip.place-bottom .info-tooltip-content::after {
+  border-color: transparent transparent #333 transparent;
+}
+.WomanSuit-container .info-tooltip.place-left .info-tooltip-content::after {
+  border-color: transparent transparent transparent #333;
+}
+.WomanSuit-container .info-tooltip.place-right .info-tooltip-content::after {
+  border-color: transparent #333 transparent transparent;
+}
 
 button {
   background-color: #007bff;
@@ -337,6 +528,7 @@ button:hover {
   display: flex;
   justify-content: space-between;
   gap: 20px;
+  /* Defina a aparência do tooltip para diferentes posições */
 }
 .WomanShirt-container .WomanShirt-container__row__col-3 {
   display: flex;
@@ -357,6 +549,43 @@ button:hover {
   border: 1px solid #ccc;
   border-radius: 5px;
   outline: none;
+}
+.WomanShirt-container .info-tooltip {
+  background-color: #333; /* Cor de fundo escura */
+  color: #fff; /* Cor do texto clara */
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 10px;
+  max-width: 200px;
+  text-align: left;
+  /* Estilize a imagem do tooltip */
+  /* Estilize a descrição do campo no tooltip */
+}
+.WomanShirt-container .info-tooltip .tooltip-image {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+.WomanShirt-container .info-tooltip .tooltip-description {
+  font-size: 14px;
+}
+.WomanShirt-container .info-tooltip.place-top::after,
+.WomanShirt-container .info-tooltip.place-bottom::after,
+.WomanShirt-container .info-tooltip.place-left::after,
+.WomanShirt-container .info-tooltip.place-right::after {
+  border-color: transparent transparent #333 transparent;
+}
+.WomanShirt-container .info-tooltip.place-top .info-tooltip-content::after {
+  border-color: #333 transparent transparent transparent;
+}
+.WomanShirt-container .info-tooltip.place-bottom .info-tooltip-content::after {
+  border-color: transparent transparent #333 transparent;
+}
+.WomanShirt-container .info-tooltip.place-left .info-tooltip-content::after {
+  border-color: transparent transparent transparent #333;
+}
+.WomanShirt-container .info-tooltip.place-right .info-tooltip-content::after {
+  border-color: transparent #333 transparent transparent;
 }
 
 button {

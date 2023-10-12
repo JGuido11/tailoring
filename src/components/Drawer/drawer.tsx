@@ -26,6 +26,18 @@ export function Drawer() {
           Contact
         </a>
       </div>
+      //#region Owner Contact
+      <section className="ContactContainer">
+        <div className="contact">
+          <p className="title">Telephone</p>
+          <p className="value"> ############</p>
+        </div>
+        <div className="contact">
+          <p className="title">E-mail</p>
+          <p className="value">contact@gmail.com</p>
+        </div>
+      </section>
+      //#endregion
     </div>
   );
 }
